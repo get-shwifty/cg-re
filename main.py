@@ -26,5 +26,14 @@ while True:
         debug("%d %d" % (fifth_input, sixth_input))
 
     # Write an action using print
-
-    print("ABCDE"[random.randrange(5)])
+    p = []
+    if first_input == "_":
+        p.append("C")
+    if second_input == "_":
+        p.append("A")
+    if third_input == "_":
+        p.append("D")
+    if fourth_input == "_":
+        p.append("E")
+    print(p[random.randrange(len(p))])
+    # print("A")
