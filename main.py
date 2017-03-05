@@ -1,5 +1,6 @@
 import sys
 import math
+import random
 
 # Auto-generated code below aims at helping you parse
 # the standard input according to the problem statement.
@@ -26,4 +27,4 @@ while True:
 
     # Write an action using print
 
-    print("A")
+    print("ABCDE"[random.randrange(5)])
