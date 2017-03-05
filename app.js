@@ -49,7 +49,7 @@
             for(let y = 0; y < self.h; y++) {
                 lab[y] = [];
                 for (let x = 0; x < self.w; x++) {
-                    lab[y][x] = "_";
+                     lab[y][x] = "_";
                 }
             }
         } else {
@@ -66,6 +66,14 @@
             lab[p[0] + 1][p[1]] = convert(loop.s[1]);
             lab[p[0]][p[1] + 1] = convert(loop.s[2]);
             lab[p[0] - 1][p[1]] = convert(loop.s[3]);
+        }
+
+        for(let y = 0; y < lab.length; y++) {
+            for (let x = 0; x < lab[y].length ; x++) {
+                if(x === 0 || y === 0 || x === lab[y].length - 1 || y === lab.length - 1) {
+                    lab[y][x] = "#";
+                }
+            }
         }
 
         self.inputLab = lab.map(line => line.join("")).join("\n");
