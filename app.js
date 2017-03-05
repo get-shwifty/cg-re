@@ -11,7 +11,7 @@
 
         var loops = [];
         while(file.length > 0) {
-            var s = file.shift();
+            var s = file.shift().split(" ");
             var pos = [];
             for(let j = 0; j < n; j++) {
                 pos.push(file.shift().split(" ").map(_.toNumber));
@@ -39,6 +39,7 @@
         el: '#app',
         data: {
             input: "",
+            lab: "",
             w: 0,
             h: 0,
             n: 0,

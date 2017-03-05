@@ -1,8 +1,20 @@
 .container{
-    width: 500px;
-    height: 500px;
     position: relative;
     border-radius: 25%;
+    float: left;
+}
+
+div.inputs {
+    float: left;
+    width: 300px;
+    height: 100vh;
+}
+
+div.settings{
+    float: left;
+    width: 390px;
+    height: 100vh;
+    text-align: center;
 }
 
 .player, .empty{
@@ -13,9 +25,13 @@
 
 .empty {
     background: white;
-    border: solid 1px black
+    border: solid 1px #333;
 }
 
 input[type=range] {
     width: 300px;
+}
+
+pre {
+    font-size: 20px;
 }

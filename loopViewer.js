@@ -1,10 +1,15 @@
 (function() {
 
     var size = 20;
-    var colors = ['red', 'blue', 'green', 'black', 'orange'];
+    var playersColors = ['#ff0000', '#33ffff', '#ff99cc', '#ffcc33', '#ffff00'];
+    var labColors = {
+        "_": "#333",
+        "#": "#1818ff",
+        "0": "#000"
+    };
     var cases = [];
 
-    function create(ctn, obj){
+    function createLab(ctn, obj){
         ctn.textContent = "";
         cases = [];
         var $ctn = $(ctn);
@@ -19,35 +24,58 @@
                 cases[i].push($el);
             }
         }
-        draw(obj);
     }
 
-    function clear(obj){
+    function drawLab(lab) {
+        for(let y = 0; y < cases.length; y++) {
+            for(let x = 0; x < cases[y].length; x++) {
+                $(cases[y][x]).css({'background': labColors._});
+            }
+        }
+        for(let y = 0; y < lab.length; y++) {
+            for(let x = 0; x < lab[y].length; x++) {
+                $(cases[y][x]).css({'background': labColors[lab[y][x]]});
+            }
+        }
+    }
+
+    function drawObj(obj){
         obj.pos.forEach((c,i) => {
-            $(cases[c[0]-1][c[1]-1]).css({'background':'white'});
+            $(cases[c[0]-1][c[1]-1]).css({'background': playersColors[i]});
         });
     }
 
-    function draw(obj){
-        obj.pos.forEach((c,i) => {
-            $(cases[c[0]-1][c[1]-1]).css({'background':colors[i]});
-        });
+    function create(self) {
+        createLab(self.$el, self.obj);
+        draw(self);
+    }
+
+    function draw(self) {
+        drawLab(self.lab);
+        drawObj(self.obj);
     }
 
     Vue.component("draw-loop", {
         template: "<div class='container'></div>",
-        props: ["obj", "lastChange"],
+        props: ["obj", "lastChange", "inputLab"],
+        computed: {
+            lab() {
+                return this.inputLab.split("\n").map(_.trim).map(l => l.split(""));
+            }
+        },
         watch: {
-            obj(newObj, oldObj) {
-                clear(oldObj);
-                draw(newObj);
-            },
             lastChange() {
-                create(this.$el, this.obj);
+                create(this);
+            },
+            obj() {
+                draw(this);
+            },
+            inputLab() {
+                draw(this);
             }
         },
         mounted() {
-            create(this.$el, this.obj);
+            create(this);
         }
     });
 
