@@ -1,0 +1,991 @@
+Standard Error Stream:
+35 28 5
+# _ # _
+11 15
+16 15
+11 17
+16 17
+13 25
+Standard Output Stream:
+A
+02
+91
+Standard Error Stream:
+# _ # _
+12 15
+15 15
+11 17
+16 17
+14 25
+Standard Output Stream:
+A
+03
+91
+Standard Error Stream:
+_ _ # _
+13 15
+14 15
+11 17
+16 17
+15 25
+Standard Output Stream:
+A
+04
+91
+Standard Error Stream:
+# _ # _
+14 15
+14 14
+11 17
+16 17
+16 25
+Standard Output Stream:
+A
+05
+91
+Standard Error Stream:
+# _ # _
+14 14
+14 13
+11 17
+16 17
+17 25
+Standard Output Stream:
+A
+06
+91
+Standard Error Stream:
+# _ _ _
+14 13
+13 13
+11 17
+16 17
+18 25
+Standard Output Stream:
+A
+07
+91
+Standard Error Stream:
+# _ # _
+15 13
+12 13
+11 17
+16 17
+19 25
+Standard Output Stream:
+A
+08
+91
+Standard Error Stream:
+# _ # _
+15 12
+12 12
+11 17
+16 17
+20 25
+Standard Output Stream:
+A
+09
+91
+Standard Error Stream:
+_ # _ _
+15 11
+12 11
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+10
+91
+Standard Error Stream:
+_ # _ _
+15 10
+12 10
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+11
+91
+Standard Error Stream:
+_ # _ _
+16 10
+11 10
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+12
+91
+Standard Error Stream:
+_ # _ _
+17 10
+10 10
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+13
+91
+Standard Error Stream:
+_ # _ _
+18 10
+9 10
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+14
+91
+Standard Error Stream:
+_ # _ _
+18 9
+9 9
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+15
+91
+Standard Error Stream:
+_ # _ _
+18 8
+9 8
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+16
+91
+Standard Error Stream:
+_ # _ _
+18 7
+9 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+17
+91
+Standard Error Stream:
+_ # _ _
+19 7
+8 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+18
+91
+Standard Error Stream:
+_ # _ _
+20 7
+7 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+19
+91
+Standard Error Stream:
+_ # _ _
+21 7
+6 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+20
+91
+Standard Error Stream:
+_ # _ _
+21 6
+6 6
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+21
+91
+Standard Error Stream:
+_ # _ _
+21 5
+6 5
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+22
+91
+Standard Error Stream:
+_ # _ _
+21 4
+6 4
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+23
+91
+Standard Error Stream:
+_ # _ _
+21 3
+6 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+24
+91
+Standard Error Stream:
+_ # _ _
+20 3
+7 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+25
+91
+Standard Error Stream:
+_ # _ _
+19 3
+8 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+26
+91
+Standard Error Stream:
+_ # _ _
+18 3
+9 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+27
+91
+Standard Error Stream:
+_ # _ _
+17 3
+10 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+28
+91
+Standard Error Stream:
+_ # _ _
+16 3
+11 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+29
+91
+Standard Error Stream:
+_ # _ _
+15 3
+12 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+30
+91
+Standard Error Stream:
+_ # _ _
+15 4
+12 4
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+31
+91
+Standard Error Stream:
+_ # _ _
+15 5
+12 5
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+32
+91
+Standard Error Stream:
+_ # _ _
+15 6
+12 6
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+33
+91
+Standard Error Stream:
+_ # _ _
+15 7
+12 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+34
+91
+Standard Error Stream:
+_ # _ _
+16 7
+11 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+35
+91
+Standard Error Stream:
+_ # _ _
+17 7
+10 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+36
+91
+Standard Error Stream:
+_ # _ _
+18 7
+9 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+37
+91
+Standard Error Stream:
+_ # _ _
+19 7
+8 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+38
+91
+Standard Error Stream:
+_ # _ _
+20 7
+7 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+39
+91
+Standard Error Stream:
+_ # _ _
+21 7
+6 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+40
+91
+Standard Error Stream:
+_ # _ _
+21 6
+6 6
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+41
+91
+Standard Error Stream:
+_ # _ _
+21 5
+6 5
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+42
+91
+Standard Error Stream:
+_ # _ _
+21 4
+6 4
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+43
+91
+Standard Error Stream:
+_ # _ _
+21 3
+6 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+44
+91
+Standard Error Stream:
+_ # _ _
+22 3
+5 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+45
+91
+Standard Error Stream:
+_ # _ _
+23 3
+4 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+46
+91
+Standard Error Stream:
+_ # _ _
+24 3
+3 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+47
+91
+Standard Error Stream:
+_ # _ _
+25 3
+2 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+48
+91
+Standard Error Stream:
+_ # _ _
+26 3
+1 3
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+49
+91
+Standard Error Stream:
+_ # _ _
+26 4
+1 4
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+50
+91
+Standard Error Stream:
+_ # _ _
+26 5
+1 5
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+51
+91
+Standard Error Stream:
+_ # _ _
+26 6
+1 6
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+52
+91
+Standard Error Stream:
+_ # _ _
+26 7
+1 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+53
+91
+Standard Error Stream:
+_ # _ _
+26 8
+2 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+54
+91
+Standard Error Stream:
+_ # _ _
+26 9
+3 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+55
+91
+Standard Error Stream:
+_ # _ _
+26 10
+4 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+56
+91
+Standard Error Stream:
+_ # _ _
+25 10
+5 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+57
+91
+Standard Error Stream:
+_ # _ _
+24 10
+6 7
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+58
+91
+Standard Error Stream:
+_ # _ _
+23 10
+6 8
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+59
+91
+Standard Error Stream:
+_ # _ _
+22 10
+6 9
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+60
+91
+Standard Error Stream:
+_ # _ _
+21 10
+6 10
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+61
+91
+Standard Error Stream:
+_ # _ _
+21 11
+6 11
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+62
+91
+Standard Error Stream:
+_ # _ _
+21 12
+6 12
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+63
+91
+Standard Error Stream:
+_ # _ _
+21 13
+6 13
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+64
+91
+Standard Error Stream:
+_ # _ _
+21 14
+6 14
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+65
+91
+Standard Error Stream:
+_ # _ _
+21 15
+6 15
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+66
+91
+Standard Error Stream:
+_ # _ _
+21 16
+6 16
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+67
+91
+Standard Error Stream:
+_ # _ _
+21 17
+6 17
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+68
+91
+Standard Error Stream:
+_ # _ _
+21 18
+6 18
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+69
+91
+Standard Error Stream:
+_ # _ _
+21 19
+6 19
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+70
+91
+Standard Error Stream:
+_ # _ _
+21 20
+6 20
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+71
+91
+Standard Error Stream:
+_ # _ _
+21 21
+6 21
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+72
+91
+Standard Error Stream:
+_ # _ _
+21 22
+6 22
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+73
+91
+Standard Error Stream:
+_ # _ _
+22 22
+5 22
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+74
+91
+Standard Error Stream:
+_ # _ _
+23 22
+4 22
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+75
+91
+Standard Error Stream:
+_ # _ _
+24 22
+3 22
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+76
+91
+Standard Error Stream:
+_ # _ _
+25 22
+2 22
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+77
+91
+Standard Error Stream:
+_ # _ _
+26 22
+1 22
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+78
+91
+Standard Error Stream:
+_ # _ _
+26 23
+1 23
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+79
+91
+Standard Error Stream:
+_ # _ _
+26 24
+1 24
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+80
+91
+Standard Error Stream:
+_ # _ _
+26 25
+1 25
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+81
+91
+Standard Error Stream:
+_ # _ _
+25 25
+2 25
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+82
+91
+Standard Error Stream:
+_ # _ _
+24 25
+3 25
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+83
+91
+Standard Error Stream:
+_ # _ _
+24 26
+3 26
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+84
+91
+Standard Error Stream:
+_ # _ _
+24 27
+3 27
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+85
+91
+Standard Error Stream:
+_ # _ _
+24 28
+3 28
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+86
+91
+Standard Error Stream:
+_ # _ _
+23 28
+4 28
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+87
+91
+Standard Error Stream:
+_ # _ _
+22 28
+5 28
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+88
+91
+Standard Error Stream:
+_ # _ _
+21 28
+6 28
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+89
+91
+Standard Error Stream:
+_ # _ _
+21 27
+6 27
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+90
+91
+Standard Error Stream:
+_ # _ _
+21 26
+6 26
+11 17
+16 17
+21 25
+Standard Output Stream:
+A
+Game information:
+Final score: 16
