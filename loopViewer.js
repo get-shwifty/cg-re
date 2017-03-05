@@ -19,6 +19,7 @@
                 cases[i].push($el);
             }
         }
+        draw(obj);
     }
 
     function clear(obj){
@@ -35,16 +36,18 @@
 
     Vue.component("draw-loop", {
         template: "<div class='container'></div>",
-        props: ["obj"],
+        props: ["obj", "lastChange"],
         watch: {
             obj(newObj, oldObj) {
                 clear(oldObj);
                 draw(newObj);
+            },
+            lastChange() {
+                create(this.$el, this.obj);
             }
         },
         mounted() {
             create(this.$el, this.obj);
-            draw(this.obj);
         }
     });
 

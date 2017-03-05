@@ -13,7 +13,7 @@
                 <input type="range" v-model="currentLoop" min="0" :max="loops.length - 1" step="1" /> {{ (+currentLoop + 1) }} / {{ loops.length }} <br />
                 <h1>{{ previousChoice }} {{ loop.s }}</h1>
                 {{ loop.pos }}
-                <draw-loop :obj="getObj(loop)"></draw-loop>
+                <draw-loop :obj="getObj(loop)" :last-change="lastChange" ></draw-loop>
             </div>
         </div>
         <script src="loopViewer.js"></script>

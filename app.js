@@ -44,7 +44,8 @@
             n: 0,
             loops: [],
             score: 0,
-            currentLoop: 0
+            currentLoop: 0,
+            lastChange: 0
         },
         computed: {
             previousChoice() {
@@ -67,6 +68,7 @@
         watch: {
             input() {
                 this.currentLoop = 0;
+                this.lastChange = Date.now();
                 decode(this, this.input);
             }
         }
