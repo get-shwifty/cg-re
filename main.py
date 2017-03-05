@@ -13,7 +13,7 @@ def debug(s):
     print(s, file=sys.stderr)
 
 debug("%d %d %d" % (first_init_input, second_init_input, third_init_input))
-
+last_choice = "B"
 # game loop
 while True:
     first_input = input()
@@ -26,7 +26,7 @@ while True:
         debug("%d %d" % (fifth_input, sixth_input))
 
     # Write an action using print
-    p = []
+    p = [last_choice]
     if first_input == "_":
         p.append("C")
     if second_input == "_":
@@ -35,5 +35,7 @@ while True:
         p.append("D")
     if fourth_input == "_":
         p.append("E")
-    print(p[random.randrange(len(p))])
+    last_choice = p[random.randrange(len(p))]
+
+    print(last_choice)
     # print("A")
