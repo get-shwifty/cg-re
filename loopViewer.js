@@ -3,9 +3,9 @@
     var size = 20;
     var playersColors = ['#ff0000', '#33ffff', '#ff99cc', '#ffcc33', '#ffff00'];
     var labColors = {
-        "_": "#333",
+        "0": "#333",
         "#": "#1818ff",
-        "0": "#000"
+        "_": "#000"
     };
     var cases = [];
 
@@ -15,13 +15,13 @@
         var $ctn = $(ctn);
         $ctn.height(obj.h * size).width(obj.w * size);
 
-        for(let i = 0; i < obj.h; i++) {
-            cases[i] = [];
-            for(let j = 0; j < obj.w; j++) {
+        for(let y = 0; y < obj.h; y++) {
+            cases[y] = [];
+            for(let x = 0; x < obj.w; x++) {
                 var $el = $("<a class='empty'/>");
-                $el.css({left:j*size,top:i*size});
+                $el.css({left:x*size,top:y*size});
                 $ctn.append($el);
-                cases[i].push($el);
+                cases[y].push($el);
             }
         }
     }
@@ -41,7 +41,7 @@
 
     function drawObj(obj){
         obj.pos.forEach((c,i) => {
-            $(cases[c[0]][c[1]]).css({'background': playersColors[i]});
+            $(cases[c[1]][c[0]]).css({'background': playersColors[i]});
         });
     }
 

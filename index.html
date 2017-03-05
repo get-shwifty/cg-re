@@ -9,16 +9,16 @@
         <div id="app">
             <div class="inputs">
                 <textarea v-model="input" rows="10" cols="38" ></textarea><br />
-                <textarea v-model="inputLab" rows="30" cols="38" ></textarea>
+                <textarea v-model="inputLab" rows="38" cols="38" ></textarea>
             </div>
             <div v-if="loops.length > 0">
                 <div class="settings" >
                     <h3>{{ w }}x{{ h }} with {{ n }} players, {{ loops.length }} loops, score : {{ score }}</h3>
                     <input type="range" v-model="currentLoop" min="0" :max="loops.length - 1" step="1" /> {{ (+currentLoop + 1) }} / {{ loops.length }} <br />
                     <h1>{{ previousChoice }}</h1>
-<pre>{{ loop.s[3] }}
-{{ loop.s[0] }}  {{ loop.s[2] }}
-{{ loop.s[1] }}</pre>
+<pre>{{ loop.s[0] }}
+{{ loop.s[3] }}  {{ loop.s[1] }}
+{{ loop.s[2] }}</pre>
                     {{ loop.pos }}
                 </div>
                 <draw-loop :obj="getObj(loop)" :last-change="lastChange" :lab="lab" ></draw-loop>

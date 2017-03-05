@@ -5,7 +5,7 @@
         if(file.length < 4) return;
 
         file.shift();
-        var [w, h, n] = file.shift().split(" ").map(_.toNumber);
+        var [h, w, n] = file.shift().split(" ").map(_.toNumber);
         var score = parseInt(_.last(file.pop().split(" ")));
         file.pop();
 
@@ -37,10 +37,6 @@
         computeLab(self);
     }
 
-    function convert(c) {
-        return c === "#" ? "#" : "0"
-    }
-
     function computeLab(self) {
         let lab;
 
@@ -49,7 +45,7 @@
             for(let y = 0; y < self.h; y++) {
                 lab[y] = [];
                 for (let x = 0; x < self.w; x++) {
-                     lab[y][x] = "_";
+                     lab[y][x] = "0";
                 }
             }
         } else {
@@ -59,13 +55,21 @@
         for(let loop of self.loops) {
             for(let i = 0; i < loop.pos.length; i++) {
                 let el = loop.pos[i];
-                lab[el[0]][el[1]] = "0";
+                lab[el[1]][el[0]] = "_";
             }
             let p = loop.pos[4];
-            lab[p[0]][p[1] - 1] = convert(loop.s[0]);
-            lab[p[0] + 1][p[1]] = convert(loop.s[1]);
-            lab[p[0]][p[1] + 1] = convert(loop.s[2]);
-            lab[p[0] - 1][p[1]] = convert(loop.s[3]);
+            if(p[1] - 1 >= 0) {
+                lab[p[1] - 1][p[0]] = loop.s[0];
+            }
+            if(p[0] + 1 < lab[p[1]].length) {
+                lab[p[1]][p[0] + 1] = loop.s[1];
+            }
+            if(p[1] + 1 < lab.length) {
+                lab[p[1] + 1][p[0]] = loop.s[2];
+            }
+            if(p[0] - 1 >= 0) {
+                lab[p[1]][p[0] - 1] = loop.s[3];
+            }
         }
 
         self.inputLab = lab.map(line => line.join("")).join("\n");
