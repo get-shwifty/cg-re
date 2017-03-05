@@ -1,19 +1,23 @@
 <html ng-app>
     <head>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js" integrity="sha256-8E6QUcFg1KTnpEU8TFGhpTGHw5fJqB9vCms3OhAYLqw=" crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="https://unpkg.com/vue"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div id="viewer">
+        <div id="app">
             <textarea v-model="input" rows="10" cols="30" ></textarea><br/>
-            <h3>{{ W }}x{{ H }} with {{ N }} players, {{ loops.length }} loops, score : {{ score }}</h3>
+            <h3>{{ w }}x{{ h }} with {{ n }} players, {{ loops.length }} loops, score : {{ score }}</h3>
             <div v-for="(loop, i) in loops" >
                 <hr/>
-                {{ i > 0 ? loops[i - 1].output : "?" }} ==>
-                {{ loop.s }}
+                {{ i > 0 ? loops[i - 1].output : "?" }} <br />
+                {{ loop.s }} <br />
                 {{ loop.pos }}
+                <draw-loop :obj="getObj(loop)"></draw-loop>
             </div>
         </div>
-        <script src="viewer.js"></script>
+        <script src="loopViewer.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>

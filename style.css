@@ -1,0 +1,17 @@
+.container{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 25%;
+}
+
+.player, .empty{
+    width:20px;
+    height:20px;
+    position:absolute;
+}
+
+.empty {
+    background: white;
+    border: solid 1px black
+}
