@@ -8,11 +8,10 @@
     <body>
         <div id="app">
             <textarea v-model="input" rows="10" cols="30" ></textarea><br/>
-            <h3>{{ w }}x{{ h }} with {{ n }} players, {{ loops.length }} loops, score : {{ score }}</h3>
-            <div v-for="(loop, i) in loops" >
-                <hr/>
-                {{ i > 0 ? loops[i - 1].output : "?" }} <br />
-                {{ loop.s }} <br />
+            <div v-if="loops.length > 0">
+                <h3>{{ w }}x{{ h }} with {{ n }} players, {{ loops.length }} loops, score : {{ score }}</h3>
+                <input type="range" v-model="currentLoop" min="0" :max="loops.length - 1" step="1" /> {{ currentLoop + 1 }} / {{ loops.length }} <br />
+                <h1>{{ previousChoice }} {{ loop.s }}</h1>
                 {{ loop.pos }}
                 <draw-loop :obj="getObj(loop)"></draw-loop>
             </div>

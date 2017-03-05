@@ -43,7 +43,16 @@
             h: 0,
             n: 0,
             loops: [],
-            score: 0
+            score: 0,
+            currentLoop: 0
+        },
+        computed: {
+            previousChoice() {
+                return this.currentLoop > 0 ? this.loops[this.currentLoop - 1].output : "?";
+            },
+            loop() {
+                return this.loops[this.currentLoop];
+            }
         },
         methods: {
             getObj(loop) {
