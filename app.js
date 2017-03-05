@@ -66,6 +66,7 @@
         },
         watch: {
             input() {
+                this.currentLoop = 0;
                 decode(this, this.input);
             }
         }
