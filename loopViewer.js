@@ -41,7 +41,7 @@
 
     function drawObj(obj){
         obj.pos.forEach((c,i) => {
-            $(cases[c[0]-1][c[1]-1]).css({'background': playersColors[i]});
+            $(cases[c[0]][c[1]]).css({'background': playersColors[i]});
         });
     }
 
