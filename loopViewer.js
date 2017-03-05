@@ -57,12 +57,7 @@
 
     Vue.component("draw-loop", {
         template: "<div class='container'></div>",
-        props: ["obj", "lastChange", "inputLab"],
-        computed: {
-            lab() {
-                return this.inputLab.split("\n").map(_.trim).map(l => l.split(""));
-            }
-        },
+        props: ["obj", "lastChange", "lab"],
         watch: {
             lastChange() {
                 create(this);
@@ -70,7 +65,7 @@
             obj() {
                 draw(this);
             },
-            inputLab() {
+            lab() {
                 draw(this);
             }
         },

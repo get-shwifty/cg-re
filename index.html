@@ -9,7 +9,7 @@
         <div id="app">
             <div class="inputs">
                 <textarea v-model="input" rows="10" cols="38" ></textarea><br />
-                <textarea v-model="lab" rows="30" cols="38" ></textarea>
+                <textarea v-model="inputLab" rows="30" cols="38" ></textarea>
             </div>
             <div v-if="loops.length > 0">
                 <div class="settings" >
@@ -21,7 +21,7 @@
 {{ loop.s[1] }}</pre>
                     {{ loop.pos }}
                 </div>
-                <draw-loop :obj="getObj(loop)" :last-change="lastChange" :input-lab="lab" ></draw-loop>
+                <draw-loop :obj="getObj(loop)" :last-change="lastChange" :lab="lab" ></draw-loop>
             </div>
         </div>
         <script src="loopViewer.js"></script>

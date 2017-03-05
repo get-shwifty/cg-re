@@ -33,13 +33,49 @@
         self.n = n;
         self.loops = loops;
         self.score = score;
+
+        computeLab(self);
+    }
+
+    function convert(c) {
+        return c === "#" ? "#" : "0"
+    }
+
+    function computeLab(self) {
+        let lab;
+
+        if(self.inputLab.length === 0) {
+            lab = [];
+            for(let y = 0; y < self.h; y++) {
+                lab[y] = [];
+                for (let x = 0; x < self.w; x++) {
+                    lab[y][x] = "_";
+                }
+            }
+        } else {
+            lab = self.lab;
+        }
+
+        for(let loop of self.loops) {
+            for(let i = 0; i < loop.pos.length; i++) {
+                let el = loop.pos[i];
+                lab[el[0]][el[1]] = "0";
+            }
+            let p = loop.pos[4];
+            lab[p[0]][p[1] - 1] = convert(loop.s[0]);
+            lab[p[0] + 1][p[1]] = convert(loop.s[1]);
+            lab[p[0]][p[1] + 1] = convert(loop.s[2]);
+            lab[p[0] - 1][p[1]] = convert(loop.s[3]);
+        }
+
+        self.inputLab = lab.map(line => line.join("")).join("\n");
     }
 
     new Vue({
         el: '#app',
         data: {
             input: "",
-            lab: "",
+            inputLab: "",
             w: 0,
             h: 0,
             n: 0,
@@ -54,6 +90,9 @@
             },
             loop() {
                 return this.loops[this.currentLoop];
+            },
+            lab() {
+                return this.inputLab.split("\n").map(_.trim).map(l => l.split(""));
             }
         },
         methods: {
