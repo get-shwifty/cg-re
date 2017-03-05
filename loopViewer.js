@@ -26,7 +26,6 @@
         template: "<div class='container'></div>",
         props: ["obj"],
         mounted() {
-            console.log("draw");
             draw(this.$el, this.obj);
         }
     });
