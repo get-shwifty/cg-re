@@ -13,7 +13,16 @@ def debug(s):
     print(s, file=sys.stderr)
 
 debug("%d %d %d" % (first_init_input, second_init_input, third_init_input))
+
 last_choice = "B"
+reverse = {
+    "E": "A",
+    "A": "E",
+    "C": "D",
+    "D": "C",
+    "B": "B"
+}
+
 # game loop
 while True:
     first_input = input()
@@ -26,15 +35,26 @@ while True:
         debug("%d %d" % (fifth_input, sixth_input))
 
     # Write an action using print
-    p = [last_choice]
-    if first_input == "_":
+    p = []
+    if first_input == "_" and reverse[last_choice] != "C":
         p.append("C")
-    if second_input == "_":
+    if second_input == "_" and reverse[last_choice] != "A":
         p.append("A")
-    if third_input == "_":
+    if third_input == "_" and reverse[last_choice] != "D":
         p.append("D")
-    if fourth_input == "_":
+    if fourth_input == "_" and reverse[last_choice] != "E":
         p.append("E")
+
+    if len(p) == 0:
+        if first_input == "_":
+            p.append("C")
+        if second_input == "_":
+            p.append("A")
+        if third_input == "_":
+            p.append("D")
+        if fourth_input == "_":
+            p.append("E")
+
     last_choice = p[random.randrange(len(p))]
 
     print(last_choice)
