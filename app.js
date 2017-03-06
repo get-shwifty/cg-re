@@ -53,10 +53,10 @@
         }
 
         for(let loop of self.loops) {
-            for(let i = 0; i < loop.pos.length; i++) {
-                let el = loop.pos[i];
-                lab[el[1]][el[0]] = "_";
-            }
+            // for(let i = 0; i < loop.pos.length; i++) {
+            //     let el = loop.pos[i];
+            //     lab[el[1]][el[0]] = "_";
+            // }
             let p = loop.pos[4];
             if(p[1] - 1 >= 0) {
                 lab[p[1] - 1][p[0]] = loop.s[0];
